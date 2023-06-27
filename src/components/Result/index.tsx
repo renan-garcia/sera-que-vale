@@ -6,7 +6,6 @@ interface ResultProps {
 function Result({ totalImportPrice, totalBrazilianPrice }: ResultProps) {
   const importPrice = parseFloat(totalImportPrice || '0')
   const brazilianPrice = parseFloat(totalBrazilianPrice || '0')
-  const result = ''
 
   if (importPrice === 0 || brazilianPrice === 0) {
     return (

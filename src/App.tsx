@@ -13,7 +13,6 @@ function App() {
   const [totalImportPrice, setTotalImportPrice] = useState<string | undefined>(
     ''
   )
-  const [iofTax, setIofTax] = useState<string | undefined>('')
 
   useEffect(() => {
     const totalPrice =

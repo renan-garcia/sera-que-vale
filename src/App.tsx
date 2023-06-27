@@ -19,7 +19,7 @@ function App() {
       (abroadPrice ? parseFloat(abroadPrice) : 0) +
       (shippingPrice ? parseFloat(shippingPrice) : 0)
     const newImportTax = totalPrice * 0.6
-    const newIcmsTax = totalPrice * 0.17
+    const newIcmsTax = (totalPrice + newImportTax) * 0.17
     setImportTax(newImportTax.toFixed(2))
     setIcmsTax(newIcmsTax.toFixed(2))
     setTotalImportPrice((totalPrice + newImportTax + newIcmsTax).toFixed(2))
